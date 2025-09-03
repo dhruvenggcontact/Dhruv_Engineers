@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhruv Engineers | Sheet Metal • Chemical Earthing • Fabrication</title>
+  <meta name="description" content="Dhruv Engineers specializes in sheet metal components, chemical earthing, fabrication, die & tooling, and spare parts for cement packing machines and mining equipment." />
+  <meta property="og:title" content="Dhruv Engineers" />
+  <meta property="og:description" content="Sheet metal components, chemical earthing, fabrication, die & tooling, and spare parts for cement packing & mining." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0a0a0a/ffffff&text=Dhruv+Engineers" />
+  <meta name="theme-color" content="#0f172a" />
+  <!-- Tailwind via CDN for quick start -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Tiny enhancements beyond Tailwind */
+    .glass { backdrop-filter: blur(6px); background: rgba(255,255,255,0.08); }
+  </style>
+  <script>
+    // Tailwind config (optional brand colors)
+    tailwind.config = { theme: { extend: { colors: { brand: { 50:'#eef2ff',100:'#e0e7ff',600:'#4f46e5',700:'#4338ca',800:'#3730a3' }}}}}
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-slate-950/80 glass">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-2xl bg-brand-600 grid place-items-center font-bold">DE</div>
+        <span class="text-lg font-semibold tracking-tight">Dhruv Engineers</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-brand-100">Services</a>
+        <a href="#quality" class="hover:text-brand-100">Quality</a>
+        <a href="#clients" class="hover:text-brand-100">Clients</a>
+        <a href="#contact" class="hover:text-brand-100">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-xl text-sm font-medium">Get Quote</a>
+      <button id="menuBtn" class="md:hidden inline-flex p-2 rounded-lg border border-slate-700" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-800">
+      <div class="px-4 py-3 flex flex-col gap-3 text-sm">
+        <a href="#services" class="hover:text-brand-100" onclick="toggleMenu()">Services</a>
+        <a href="#quality" class="hover:text-brand-100" onclick="toggleMenu()">Quality</a>
+        <a href="#clients" class="hover:text-brand-100" onclick="toggleMenu()">Clients</a>
+        <a href="#contact" class="hover:text-brand-100" onclick="toggleMenu()">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(1000px_500px_at_100%_0%,rgba(79,70,229,0.25),transparent_60%),radial-gradient(800px_400px_at_0%_100%,rgba(2,132,199,0.25),transparent_60%)]"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+          Precision in <span class="text-brand-100">Sheet Metal</span>,
+          Reliability in <span class="text-brand-100">Chemical Earthing</span>,
+          Strength in <span class="text-brand-100">Fabrication</span>
+        </h1>
+        <p class="mt-5 text-slate-300 max-w-xl">
+          From die & tooling to spare parts for cement packing machines and mining equipment—
+          we design, manufacture, and deliver with uncompromising quality.
+        </p>
+        <div class="mt-8 flex gap-3">
+          <a href="#contact" class="bg-brand-600 hover:bg-brand-700 px-5 py-3 rounded-2xl font-medium">Request a Quote</a>
+          <a href="#services" class="border border-slate-700 hover:border-slate-500 px-5 py-3 rounded-2xl font-medium">Our Services</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
+          <h3 class="font-semibold">Sheet Metal Components</h3>
+          <p class="text-sm text-slate-300 mt-2">High-precision parts with calibrated dies for perfect alignment.</p>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
+          <h3 class="font-semibold">Chemical Earthing</h3>
+          <p class="text-sm text-slate-300 mt-2">Low-resistance earthing systems with strict safety compliance.</p>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
+          <h3 class="font-semibold">Fabrication</h3>
+          <p class="text-sm text-slate-300 mt-2">Custom fabrication with robust QA and preventive maintenance.</p>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
+          <h3 class="font-semibold">Die & Tooling</h3>
+          <p class="text-sm text-slate-300 mt-2">Calibrated tooling built from approved samples for consistent dimensions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">What we do</h2>
+      <p class="text-slate-300 mt-2">End‑to‑end manufacturing with documented processes and traceability.</p>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+          <h3 class="font-semibold text-lg">Sheet Metal Components</h3>
+          <ul class="mt-3 list-disc list-inside text-slate-300 text-sm space-y-1">
+            <li>Laser cutting, bending, stamping</li>
+            <li>Powder coating & surface finishes</li>
+            <li>Batch & JIT delivery</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+          <h3 class="font-semibold text-lg">Chemical Earthing</h3>
+          <ul class="mt-3 list-disc list-inside text-slate-300 text-sm space-y-1">
+            <li>Maintenance‑free earthing electrodes</li>
+            <li>Soil resistivity testing</li>
+            <li>Lightning protection integration</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+          <h3 class="font-semibold text-lg">Fabrication</h3>
+          <ul class="mt-3 list-disc list-inside text-slate-300 text-sm space-y-1">
+            <li>MIG/TIG/Arc welding</li>
+            <li>Assembly & QA documentation</li>
+            <li>On‑site installation</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 md:col-span-2">
+          <h3 class="font-semibold text-lg">Die & Tooling</h3>
+          <p class="mt-3 text-slate-300 text-sm">Calibrated dies produced from customer‑approved samples. Preventive maintenance schedules ensure long tool life and repeatability.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+          <h3 class="font-semibold text-lg">Spare Parts</h3>
+          <p class="mt-3 text-slate-300 text-sm">Spare parts for cement packing machines and mining equipment with reverse‑engineering support and alignment checks.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality -->
+  <section id="quality" class="py-20 border-t border-slate-800 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">Quality & Safety</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+          <h3 class="font-semibold">Quality Assurance</h3>
+          <ul class="mt-3 list-disc list-inside text-slate-300 text-sm space-y-1">
+            <li>Calibrated measuring instruments (traceable)</li>
+            <li>First article inspection & PPAP support</li>
+            <li>Dimensional reports with alignment verification</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6">
+          <h3 class="font-semibold">Safety & Compliance</h3>
+          <ul class="mt-3 list-disc list-inside text-slate-300 text-sm space-y-1">
+            <li>Preventive maintenance & SOPs</li>
+            <li>PPE and electrical safety protocols</li>
+            <li>Environmentally responsible processes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section id="clients" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">Trusted by industry</h2>
+      <p class="text-slate-300 mt-2">We support OEMs and contractors in cement, mining, and infrastructure.</p>
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 opacity-80">
+        <div class="rounded-xl bg-slate-900/50 border border-slate-800 h-16 grid place-items-center text-sm">OEM Partner</div>
+        <div class="rounded-xl bg-slate-900/50 border border-slate-800 h-16 grid place-items-center text-sm">EPC Contractor</div>
+        <div class="rounded-xl bg-slate-900/50 border border-slate-800 h-16 grid place-items-center text-sm">Mining Co.</div>
+        <div class="rounded-xl bg-slate-900/50 border border-slate-800 h-16 grid place-items-center text-sm">Cement Plant</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 border-t border-slate-800 bg-slate-950">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">Get a quote</h2>
+      <p class="text-slate-300 mt-2">Share your drawings/specs and we’ll respond within 1 business day.</p>
+      <form class="mt-8 grid gap-4" onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you.'); this.reset();">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input required placeholder="Your name" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-600" />
+          <input required type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-600" />
+        </div>
+        <input placeholder="Phone" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-600" />
+        <textarea required rows="5" placeholder="Project details (material, qty, delivery timeline)" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-600"></textarea>
+        <button class="justify-self-start bg-brand-600 hover:bg-brand-700 px-5 py-3 rounded-2xl font-medium">Send</button>
+      </form>
+      <div class="mt-8 text-sm text-slate-300">
+        <p><strong>Address:</strong> Your plant address here</p>
+        <p><strong>Email:</strong> sales@dhruvengineers.co.in</p>
+        <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-slate-400">
+    © <span id="year"></span> Dhruv Engineers. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleMenu(){
+      const m = document.getElementById('mobileMenu');
+      m.classList.toggle('hidden');
+    }
+    document.getElementById('menuBtn')?.addEventListener('click', toggleMenu);
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
